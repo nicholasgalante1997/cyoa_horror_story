@@ -1,4 +1,4 @@
-def chapter_one_one
+def chapter_one 
     
     puts "You stop screaming. The taste of the rag is damp and mildewy.
     You lift your head from the trunk floor. It's pitch black. There's no room to move.
@@ -30,7 +30,7 @@ def chapter_one_one
                 puts "You never saw it coming, but you felt it. Then you couldn't breathe, and with every gasping breathe, you seemed to only drown further."
                 puts "Then you weren't."
                 puts "Game Over."
-                puts "Would you like to play again?"
+                puts "Would you like to play again? Tap the up arrow key, and hit enter. Repeat if necessary until prompt reads: ruby nicks_story.rb"
                 
                 elsif user_r11 == 2 #option 1.12
                 puts "Without looking back, you march into the black."
@@ -43,15 +43,15 @@ def chapter_one_one
                 o_1121 = i_1121.to_i 
                 if o_1121 == 1 
                     puts "You slowly approach the light."
-                    elsif o_1121 == 2 
+                    elsif o_1121 == 2 #option 1.122  
                     puts "You remain in the shadows."
                 else 
-                    puts "Were all mad here."
+                    puts "Made the rules fairly simple. Either 1 or 2. Don't know how you fucked that up. Tap the up arrow key, and hit enter. Repeat if necessary until prompt reads: ruby nicks_story.rb"
                 end 
                 
                 
             else 
-                puts "Were all mad here."
+                puts "Made the rules fairly simple. Either 1 or 2. Don't know how you fucked that up. Tap the up arrow key, and hit enter. Repeat if necessary until prompt reads: ruby nicks_story.rb"
             end 
                 
             elsif user_r1 == 2 #option 1.2 
@@ -76,10 +76,27 @@ def chapter_one_one
                 o_1211 = i_1211.to_i 
                 if o_1211 == 1 
                     puts "You begin to head back towards the road."
+                    puts "After a short while of walking, it becomes apparent that you are lost."
+                    puts "You begin to panic. Nobody knows where you are. You don't know where you are."
+                    puts "In your panic, you spot a light in the distance. It's very dim. You don't know what it could be, but you're running out of options."
+                    puts "Select 1 if you want to head towards the dim light."
+                    puts "Select 2 if you want to continue in the other direction to find the road."
+                    
+                    i_12111 = gets.strip #option 1.2111 
+                    o_12111 = i_12111.to_i 
+                    if o_12111 == 1 
+                        puts "You approach the dim light cautiously, and from crouching behind thick brush, you're able to make out what appears to be 5-6 people surrounding a fire."
+                        puts "You don't hear any noise, but you also can't see their faces. Only shadows."
+                        elsif o_12111 == 2 #option 1.2112 
+                        puts "After further wandering, you are hopelessly lost."
+                    else   
+                        puts "You fucked up somehow. Tap the up arrow key, and hit enter. Repeat if necessary until prompt reads: ruby nicks_story.rb"
+                    end 
+                    
                     elsif o_1211 == 2 #option 1.212 
                     puts "You find a safe spot, and before you know it, you are sound asleep."
                 else  
-                    puts "Were all mad here."
+                    puts "Made the rules fairly simple. Either 1 or 2. Don't know how you fucked that up. Tap the up arrow key, and hit enter. Repeat if necessary until prompt reads: ruby nicks_story.rb"
                 end 
                 
                 elsif user_r12 == 2 #option 1.22
@@ -101,16 +118,16 @@ def chapter_one_one
                     elsif o_122 == 2 #option 1.222 
                     puts "You can't run forever."
                 else   
-                    puts "Were all mad here."
+                    puts "Made the rules fairly simple. Either 1 or 2. Don't know how you fucked that up. Tap the up arrow key, and hit enter. Repeat if necessary until prompt reads: ruby nicks_story.rb"
                 end  
                 
                 
             else  #reinforcement
-                puts "Were all mad here."
+                puts "Made the rules fairly simple. Either 1 or 2. Don't know how you fucked that up. Tap the up arrow key, and hit enter. Repeat if necessary until prompt reads: ruby nicks_story.rb"
             end 
             
             else #reinforcement 
-                puts "Were all mad here." 
+                puts "Made the rules fairly simple. Either 1 or 2. Don't know how you fucked that up. Tap the up arrow key, and hit enter. Repeat if necessary until prompt reads: ruby nicks_story.rb" 
             end #Add more if functional
         
         elsif resp == 2 #option 2.0 
@@ -143,7 +160,7 @@ def chapter_one_one
                 puts "Time to sleep."
                 puts "It reaches forward through the black, and in one motion opens your neck from ear to ear."
                 puts "You sleep, never to awake."
-                puts "Game Over."
+                puts "Game Over. Tap the up arrow key, and hit enter. Repeat if necessary until prompt reads: ruby nicks_story.rb"
                 elsif o_211 == 2 #option 2.12 
                 puts "It grunts forth a laugh that sounds pained."
                 puts "It exits the room."
@@ -159,22 +176,60 @@ def chapter_one_one
                 o_2121 = i_2121.to_i 
                 if o_2121 == 1 
                     puts "You grab the bone."
+                    puts "You stare at the jagged edge of the femur, intently. The man begins to stir from his sleep."
+                    puts "Are you a man, or are you a beast?"
+                    puts "Select 1 to drive the jagged edge through the now fully awake man."
+                    puts "Select 2 to throw the femur across the room out of mutual reach."
+                    
+                    i_21211 = gets.strip #option 2.1211 
+                    o_21211 = i_21211.to_i 
+                    if o_21211 == 1 
+                        puts "Blood splatters everywhere, and although you anticipated further screams, there's a moment of silence."
+                        puts "And that's even worse."
+                        puts "You begin to scream, 'Let me the fuck out of here!' You bang around and smash the femur that you're still gripping."
+                        puts "Although you can't see it well, you feel the pool of blood begin to amass beneath you."
+                        puts "You scream again, but to no reply."
+                        puts "You look down at the nameless man who just was."
+                        puts "The voice that led in the 'Feed' chants resumes:
+                        FEED FEED FEED FEED FEED"
+                        puts "'I can't'"
+                        
+                    def chant_method #bangbang added in a method #try and use chant_method later on in chain 
+                            chant = "FEED FEED FEED"
+                            count = 15 
+                        while count >= 0 
+                            puts "#{chant}"
+                            count -= 1 
+                        end 
+                    end 
+                        
+                        chant_method
+                        puts "'No please really I can't'"
+                        puts "The chant subsides."
+                        elsif o_21211 == 2 #option 2.1212 
+                        puts "Weeks go by and the door never opens again."
+                        puts "Game Over; Tap the up arrow key, and hit enter. Repeat if necessary until prompt reads: ruby nicks_story.rb"
+                    else   
+                        puts "Tap the up arrow key, and hit enter. Repeat if necessary until prompt reads: ruby nicks_story.rb"
+                    end  
+                    
+                    
                     elsif o_2121 == 2 #option 2.122 
                     puts "The man begins to scream wildly, and shake in his restraints. He notices the bone between you."
                     puts "The voices persist, chanting 'FEED FEED FEED!'"
                 else   
-                    puts "Were all mad here."
+                    puts "Made the rules fairly simple. Either 1 or 2. Don't know how you fucked that up. Tap the up arrow key, and hit enter. Repeat if necessary until prompt reads: ruby nicks_story.rb"
                 end  
                 
                 
             else   
-                puts "We're all mad here."
+                puts "Made the rules fairly simple. Either 1 or 2. Don't know how you fucked that up. Tap the up arrow key, and hit enter. Repeat if necessary until prompt reads: ruby nicks_story.rb"
             end 
             
             elsif user_r2 == 2 #option 2.2 
             puts "With some struggle, the shackle has managed to remain tethered to the wall. Your wrist now bleeds openly from your bout with the chain."
         else 
-            puts "Were all mad here." #reinforcement 
+            puts "Made the rules fairly simple. Either 1 or 2. Don't know how you fucked that up. Tap the up arrow key, and hit enter. Repeat if necessary until prompt reads: ruby nicks_story.rb" #reinforcement 
             end 
         
     
@@ -193,6 +248,6 @@ def chapter_one_one
     
 end 
 
-chapter_one_one
+chapter_one
 
 # It works like a beaut. 2.0!!! updated on 4/25 pretty and functional
